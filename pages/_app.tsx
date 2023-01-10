@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>世界ずっとWONDER | GAKU</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Put your description here." />
+        <meta name="description" content="Googleで検索してもわからない、不思議なモノ・コトに出会いたい。誰のためでもない、あなたがつくる、あなたの物語を発信するインディーズのメディアラボです。" />
         <link rel="shortcut icon" href="/wonderTitle.png" />
       </Head>
       <Box
