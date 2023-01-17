@@ -34,24 +34,25 @@ const KitaruImage = () => {
             transform: 'rotate(-20deg)',
             marginLeft: -10,
             paddingTop: 30,
+            minWidth: 200,
           }}
         ></Lottie>
         <Image
           src={'/images/kitarubeki2.webp'}
           alt="icon"
-          width={100}
-          height={20}
+          width={500}
+          height={500}
           style={{
+            minWidth: 200,
             position: 'relative',
             bottom: 15,
             left: 70,
             zIndex: 20,
-            width: 200,
           }}
         />
         <Lottie
           animationData={starLottie}
-          style={{ position: 'relative', bottom: 50, left: 60 }}
+          style={{ position: 'relative', bottom: 50, left: 60, minWidth: 200 }}
         ></Lottie>
         {/* <video
           muted

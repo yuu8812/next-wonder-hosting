@@ -35,14 +35,16 @@ const FooterLogos = () => {
           height={350}
         />
       </Link>
-      <Image
-        loading="lazy"
-        className="pt-20"
-        src={'/images/universe.webp'}
-        alt="logo"
-        width={150}
-        height={150}
-      />
+      <Link href="https://www.dracre.co.jp/宇宙子" target={'blank'}>
+        <Image
+          loading="lazy"
+          className="pt-20"
+          src={'/images/universe.webp'}
+          alt="logo"
+          width={150}
+          height={150}
+        />
+      </Link>
       <Link href="https://www.dracre.co.jp/" target={'blank'}>
         <Image
           loading="lazy"

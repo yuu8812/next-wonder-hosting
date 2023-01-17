@@ -218,15 +218,14 @@ const SliderAndTeacher = () => {
             justifyContent={'center'}
             className="keen-slider__slide"
           >
-            <LazyLoad height={300}>
-              <Vimeo
-                video="260878998"
-                autoplay={false}
-                muted={false}
-                width={380}
-                height={300}
-              />
-            </LazyLoad>
+            <Vimeo
+              video="260878998"
+              autoplay={false}
+              muted={false}
+              width={380}
+              height={300}
+            />
+
             <Center flexDir={'column'} h={100} bg={'black'} w={'100vw'}>
               <Text>ツアー・イベント・パーティー</Text>
               <Text>「静かな集まり」(2018)</Text>

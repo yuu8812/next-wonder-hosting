@@ -10,20 +10,23 @@ import Link from 'next/link';
 const Media = () => {
   return (
     <Box>
-      <Center>
+      <Box
+        fontSize={'9px'}
+        background={'white'}
+        sx={{ borderTop: '10px solid', WebkitTextStroke: '0.4px' }}
+        alignItems={'start'}
+      >
         <Flex
-          w={'100%'}
+          w={'100vw'}
           pt={40}
-          wrap={'wrap'}
           fontSize={'9px'}
           background={'white'}
           sx={{ borderTop: '10px solid', WebkitTextStroke: '0.4px' }}
-          justifyContent={'space-between'}
-          px={20}
-
-          // alignItems={'start'}
+          alignItems={'start'}
+          justifyContent={['center', 'space-around']}
+          mx={'auto'}
         >
-          <Center alignItems={'center'} flexDir={'column'} mb={10}>
+          <Center flexDir={'column'} mb={10} maxW={'25vw'}>
             <Center h={400} w={400}>
               <Link
                 href="https://www.youtube.com/watch?v=DOEk-0MeQbI"
@@ -51,13 +54,14 @@ const Media = () => {
             flexDir={'column'}
             w={400}
             mt={-4}
+            maxW={'25vw'}
           >
             <Center>
               <iframe
                 loading="lazy"
                 title="music"
-                height="300"
-                width="300"
+                height="350"
+                width="350"
                 scrolling="no"
                 allow="autoplay"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/809489728&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
@@ -71,12 +75,12 @@ const Media = () => {
           <Box
             flexDir={'column'}
             w={'400px'}
-            ml={6}
             position="relative"
             mt={-8}
             sx={{
               WebkitTextStroke: '0.6px',
             }}
+            maxW={'25vw'}
           >
             <Box>
               <Text mt={5} fontSize={'xl'} borderBottom={'2px'} w={'max'}>
@@ -86,7 +90,7 @@ const Media = () => {
                 中里龍造
               </Text>
             </Box>
-            <Box position="absolute" top={-10} right={36}>
+            <Box position="absolute" top={-10} right={10}>
               <Image
                 loading="lazy"
                 alt="human"
@@ -109,7 +113,7 @@ const Media = () => {
             </Text>
             <Text
               fontSize={'11.5px'}
-              w={'80%'}
+              w={'100%'}
               sx={{ lineHeight: '22px', WebkitTextStroke: '0.5px' }}
             >
               制度の境界面にある摩擦に興味を持ち作品創作を行う 主な作品に
@@ -118,7 +122,9 @@ const Media = () => {
               夢は「いつか異星人に出会った時、ケンカせずに仲良くする技術を発明する」こと。
             </Text>
           </Box>
-          <Center alignItems={'center'} w={400} ml={8}>
+        </Flex>
+        <Flex alignItems={'start'} justifyContent={'space-around'}>
+          <Center alignItems={'center'} maxW={'25vw'} ml={8}>
             <Flex
               flexDir={'column'}
               alignItems={'center'}
@@ -163,15 +169,15 @@ const Media = () => {
             flexDir={'column'}
             alignItems="center"
             justifyContent={'center'}
-            w={400}
+            maxW={'25vw'}
             // bg={'red'}
           >
             <Center>
               <iframe
                 loading="lazy"
                 title="music2"
-                height="300"
-                width="300"
+                height="350"
+                width="350"
                 className=""
                 allow="autoplay"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/415877685&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
@@ -185,9 +191,9 @@ const Media = () => {
               <Text>トーク</Text>
             </Center>
           </Center>
-          <Spacer />
+          <Box h={300} w={'25vw'}></Box>
         </Flex>
-      </Center>
+      </Box>
       <Box
         fontSize={'9px'}
         background={'white'}
@@ -201,15 +207,14 @@ const Media = () => {
           w={600}
         >
           <Box>
-            <LazyLoad height={400}>
-              <Vimeo
-                video="260878998"
-                autoplay={false}
-                muted={false}
-                width={600}
-                height={400}
-              />
-            </LazyLoad>
+            <Vimeo
+              video="260878998"
+              autoplay={false}
+              muted={false}
+              width={600}
+              height={400}
+            />
+
             <Center flexDir={'column'} h={100} mt={-8}>
               <Text>ツアー・イベント・パーティー</Text>
               <Text>「静かな集まり」(2018)</Text>

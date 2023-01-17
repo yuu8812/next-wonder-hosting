@@ -277,8 +277,8 @@ const Introduction = () => {
                   >
                     支払い方法
                   </Text>
-                  <Text>申し込みフォーム記入後、</Text>
-                  <Text>メールにてお支払い方法詳細をお知らせいたします</Text>
+                  <Text>申し込みフォーム記入後、メールにて</Text>
+                  <Text>お支払い方法詳細をお知らせいたします</Text>
                   <Text>お支払い回数は 1, 2, 4回から選択可能です</Text>
                 </Box>
               </Box>
@@ -418,11 +418,11 @@ const Introduction = () => {
                   参加方法
                 </Text>
                 <div>
-                  <div>
-                    プログラム内容や日時などの詳細や参加者の募集は随時世界ずっとWONDER公式サイトやSNSよりお知らせします。
+                  <div>プログラム内容や日時などの詳細や参加者の募集は随時</div>
+                  <div className="">
+                    世界ずっとWONDER公式サイトやSNSよりお知らせします。ご興味がある方はフォローをお願いいたします
                   </div>
-                  <div>ご興味がある方はフォローをお願いいたします</div>
-                  <Flex pt={10}>
+                  <Center pt={10}>
                     <Box pr={2}>instagram :</Box>
                     <Link
                       href="https://www.instagram.com/sekaizutto/"
@@ -430,13 +430,13 @@ const Introduction = () => {
                     >
                       @sekaizutto
                     </Link>
-                  </Flex>
-                  <Flex pt={2}>
+                  </Center>
+                  <Center pt={2}>
                     <Box pr={2}>twitter :</Box>
                     <Link href="https://twitter.com/sekaizutto" target="blank">
                       @sekaizutto
                     </Link>
-                  </Flex>
+                  </Center>
                 </div>
               </Flex>
               <Center w={'45vw'} px={10} flexDir="column">

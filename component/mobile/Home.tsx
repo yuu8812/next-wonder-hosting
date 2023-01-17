@@ -314,10 +314,7 @@ const Home = () => {
       <Box id={'introduction'}>
         <Introduction />
       </Box>
-      <LazyLoad height={720}>
-        <SliderAndTeacher />
-      </LazyLoad>
-
+      <SliderAndTeacher />
       <Box id={'map'}>
         <PlaceAndMap />
       </Box>
