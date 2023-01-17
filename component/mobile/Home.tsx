@@ -18,7 +18,6 @@ import QAndA from './componentMobile/QAndA';
 import FooterLogos from '../common/FooterLogos';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { Link as Scroll } from 'react-scroll';
-import LazyLoad from 'react-lazyload';
 import KitaruImage from '../common/KitaruImage';
 import Image from 'next/image';
 import Link from 'next/link';

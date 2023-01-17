@@ -7,7 +7,6 @@ import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 import { useState } from 'react';
-import LazyLoad from 'react-lazyload';
 import Image from 'next/image';
 import Link from 'next/link';
 
