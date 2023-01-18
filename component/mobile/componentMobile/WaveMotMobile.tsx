@@ -10,8 +10,8 @@ const WaveMotMobile = () => {
           src={'/svgs/logo6.webp'}
           alt="logo"
           loading="lazy"
-          width={200}
-          height={200}
+          width={600}
+          height={100}
           style={{ transform: 'scale(2.5)' }}
         />
       </Center>

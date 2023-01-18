@@ -23,7 +23,6 @@
     "framer-motion": "^6",
     "gsap": "^3.11.4",
     "keen-slider": "^6.8.5",
-    "lottie-react": "^2.3.1",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

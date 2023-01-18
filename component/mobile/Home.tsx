@@ -4,9 +4,6 @@ import { Box, Button, Center, Flex, Text } from '@chakra-ui/react';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { gsap } from 'gsap';
-import Lottie from 'lottie-react';
-import yokoLottie from '../../lottie/yoko-blue-lottie2.json';
-import sandStormLottie from '../../lottie/sand-storm-lottie.json';
 
 import MovePhotoMovie from './componentMobile/MovePhotoMovie';
 
@@ -193,11 +190,17 @@ const Home = () => {
           </Scroll>
         </Center>
       </Box>
-      <Box overflow={'hidden'} minHeight={400}>
-        <Lottie
-          animationData={yokoLottie}
-          style={{ transform: 'scale(2.0)' }}
-        />
+      <Box overflow={'hidden'}>
+        <video
+          muted
+          autoPlay={true}
+          playsInline
+          preload="auto"
+          loop
+          style={{ scale: 1.5, width: '100vw' }}
+        >
+          <source src="/gifs/yoko-blue.mp4" />
+        </video>
       </Box>
       <Flex
         textAlign={'center'}
@@ -278,22 +281,17 @@ const Home = () => {
         w="cal(100vw)"
         marginBottom={-500}
       >
-        {/* <LazyLoad height={600} offset={500}> */}
-        {/* <video
-            src={'/gifs/sand-storm.mp4'}
-            style={{ transform: 'rotate(90deg) scale(2.0)' }}
-            width={600}
-            muted
-            autoPlay={true}
-            playsInline
-            preload="auto"
-            loop
-          ></video> */}
-        <Lottie
-          animationData={sandStormLottie}
+        <video
           style={{ transform: 'rotate(90deg) scale(2.0)' }}
-        />
-        {/* </LazyLoad> */}
+          width={600}
+          muted
+          autoPlay={true}
+          playsInline
+          preload="auto"
+          loop
+        >
+          <source src="/gifs/sand-storm.mp4" />
+        </video>
         <Text
           zIndex={10}
           position="absolute"

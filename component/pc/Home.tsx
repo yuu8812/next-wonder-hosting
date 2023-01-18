@@ -1,6 +1,4 @@
 import { Box } from '@chakra-ui/react';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import FooterLogos from '../common/FooterLogos';
 import FirstPage from './componentPc/FirstPage';
 import FullScreenGif from './componentPc/FullScreenGif';
@@ -12,8 +10,6 @@ import Media from './componentPc/Media';
 import QandA from './componentPc/QandA';
 import WaveAndText from './componentPc/WaveAndText';
 import WaveMot from './componentPc/WaveMot';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   return (

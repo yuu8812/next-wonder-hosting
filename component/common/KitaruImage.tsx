@@ -1,9 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Lottie from 'lottie-react';
-import starLottie from '../../lottie/star-lottie.json';
-import programLottie from '../../lottie/program-lottie.json';
 
 const KitaruImage = () => {
   return (
@@ -12,7 +9,7 @@ const KitaruImage = () => {
         href="http://sekaizutto.com/%e6%9d%a5%e3%81%9f%e3%82%8b%e3%81%b9%e3%81%8d%e9%a2%a8%e6%99%af%e3%81%ae%e4%ba%88%e6%84%9f.html"
         target={'_blank'}
       >
-        {/* <video
+        <video
           muted
           autoPlay={true}
           playsInline
@@ -27,21 +24,13 @@ const KitaruImage = () => {
           }}
         >
           <source src={'/gifs/new_program.mp4'} type="video/mp4" />
-        </video> */}
-        <Lottie
-          animationData={programLottie}
-          style={{
-            transform: 'rotate(-20deg)',
-            marginLeft: -10,
-            paddingTop: 30,
-            minWidth: 200,
-          }}
-        ></Lottie>
+        </video>
+
         <Image
           src={'/images/kitarubeki2.webp'}
           alt="icon"
           width={500}
-          height={500}
+          height={200}
           style={{
             minWidth: 200,
             position: 'relative',
@@ -50,27 +39,24 @@ const KitaruImage = () => {
             zIndex: 20,
           }}
         />
-        <Lottie
-          animationData={starLottie}
-          style={{ position: 'relative', bottom: 50, left: 60, minWidth: 200 }}
-        ></Lottie>
-        {/* <video
+
+        <video
           muted
           autoPlay={true}
           playsInline
           preload="auto"
           loop
-          width={100}
-          height={100}
+          width={200}
+          height={200}
           style={{
             position: 'relative',
-            bottom: 40,
+            bottom: 60,
             left: 80,
             background: 'white',
           }}
         >
           <source src={'/gifs/star.mp4'} />
-        </video> */}
+        </video>
       </Link>
     </Box>
   );
