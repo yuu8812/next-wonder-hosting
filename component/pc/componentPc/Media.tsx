@@ -3,7 +3,6 @@ import { Box, Center, Flex, Spacer, Text } from '@chakra-ui/react';
 import Vimeo from '@u-wave/react-vimeo';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
-import LazyLoad from 'react-lazyload';
 import Image from 'next/image';
 import Link from 'next/link';
 
