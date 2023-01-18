@@ -1,8 +1,4 @@
-import logo from '/svgs/logo3.webp';
-import logo2 from '/images/logo.webp';
-import logo3 from '/images/universe.webp';
-import logo4 from '/images/dracle.webp';
-import { Box, Center } from '@chakra-ui/react';
+import { Center } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 

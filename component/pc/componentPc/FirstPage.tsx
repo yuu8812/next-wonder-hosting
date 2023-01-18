@@ -28,7 +28,7 @@ const FirstPage = () => {
               src={'/svgs/logo3.webp'}
               alt="wonder"
               width={600}
-              height={300}
+              height={200}
               priority
             />
           </Box>

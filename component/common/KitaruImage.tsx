@@ -7,7 +7,7 @@ import programLottie from '../../lottie/program-lottie.json';
 
 const KitaruImage = () => {
   return (
-    <Box mb={20}>
+    <Box mb={20} w={200} h={200}>
       <Link
         href="http://sekaizutto.com/%e6%9d%a5%e3%81%9f%e3%82%8b%e3%81%b9%e3%81%8d%e9%a2%a8%e6%99%af%e3%81%ae%e4%ba%88%e6%84%9f.html"
         target={'_blank'}

@@ -89,12 +89,15 @@ const Home = () => {
             position="relative"
             top={-14}
             marginBottom={-12}
+            pos="relative"
+            w={'100vw'}
+            h={120}
           >
             <Image
               src={'/svgs/logo3.webp'}
               alt="wonder"
               width={320}
-              height={300}
+              height={100}
             />
           </Flex>
           <Flex

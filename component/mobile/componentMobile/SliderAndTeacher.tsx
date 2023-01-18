@@ -69,6 +69,7 @@ const SliderAndTeacher = () => {
         <Image
           loading="lazy"
           alt="human"
+          // unoptimized={true}
           src={'/gifs/human.gif'}
           width={100}
           height={100}

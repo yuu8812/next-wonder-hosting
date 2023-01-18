@@ -1,6 +1,6 @@
 import Main from '../component/mobile/Main';
 import { Suspense } from 'react';
-import { Box, Center } from '@chakra-ui/react';
+import { Center } from '@chakra-ui/react';
 
 interface Props {}
 

@@ -24,8 +24,9 @@ const Media = () => {
           alignItems={'start'}
           justifyContent={['center', 'space-around']}
           mx={'auto'}
+          h={700}
         >
-          <Center flexDir={'column'} mb={10} maxW={'25vw'}>
+          <Center flexDir={'column'} mb={8} w={'25vw'} pt={1}>
             <Center h={400} w={400}>
               <Link
                 href="https://www.youtube.com/watch?v=DOEk-0MeQbI"
@@ -39,7 +40,7 @@ const Media = () => {
                     width={330}
                     height={330}
                   />
-                  <Center flexDir={'column'} h={100}>
+                  <Center flexDir={'column'} h={100} mt={3}>
                     <Text>ドキュメンタリー番組「のんたれ」</Text>
                     <Text my={1}>(Youtube Originals 2019)</Text>
                     <Text>ディレクター</Text>
@@ -51,35 +52,33 @@ const Media = () => {
           <Center
             className="keen-slider__slide"
             flexDir={'column'}
-            w={400}
+            w={'25vw'}
             mt={-4}
-            maxW={'25vw'}
           >
             <Center>
               <iframe
                 loading="lazy"
                 title="music"
-                height="350"
-                width="350"
-                scrolling="no"
-                allow="autoplay"
+                height="330"
+                width="330"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/809489728&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
               />
             </Center>
-            <Center flexDir={'column'} h={100}>
+            <Center flexDir={'column'} h={100} mt={0}>
               <Text>楽曲「彗星へのアンサー」</Text>
               <Text mt={3}>プロデューサー・歌の登場人物</Text>
             </Center>
           </Center>
           <Box
             flexDir={'column'}
-            w={'400px'}
             position="relative"
-            mt={-8}
             sx={{
               WebkitTextStroke: '0.6px',
             }}
-            maxW={'25vw'}
+            w={'25vw'}
+            maxH={400}
+            mt={-10}
+            ml={-3}
           >
             <Box>
               <Text mt={5} fontSize={'xl'} borderBottom={'2px'} w={'max'}>
@@ -89,10 +88,11 @@ const Media = () => {
                 中里龍造
               </Text>
             </Box>
-            <Box position="absolute" top={-10} right={10}>
+            <Box position="absolute" top={-10} right={'20%'}>
               <Image
                 loading="lazy"
                 alt="human"
+                // unoptimized={true}
                 src={'/gifs/human.gif'}
                 width={100}
                 height={100}
@@ -112,7 +112,7 @@ const Media = () => {
             </Text>
             <Text
               fontSize={'11.5px'}
-              w={'100%'}
+              w={'80%'}
               sx={{ lineHeight: '22px', WebkitTextStroke: '0.5px' }}
             >
               制度の境界面にある摩擦に興味を持ち作品創作を行う 主な作品に
@@ -132,10 +132,11 @@ const Media = () => {
               <Link href="https://www.yumegiwa.co.jp/" target={'blank'}>
                 <Center
                   flexDir={'column'}
-                  h={'300px'}
                   bg={'white'}
-                  width={'400px'}
-                  mb={10}
+                  mb={0}
+                  w={400}
+                  h={300}
+                  mt={10}
                 >
                   <Image
                     loading="lazy"
@@ -152,12 +153,7 @@ const Media = () => {
                     height={250}
                   />
                 </Center>
-                <Center
-                  flexDir={'column'}
-                  h={100}
-                  position="relative"
-                  top={-14}
-                >
+                <Center flexDir={'column'} h={100} position="relative" mt={-2}>
                   <Text>ミュータントスペース「YUMEGIWA 」</Text>
                   <Text mt={3}>店長</Text>
                 </Center>
@@ -175,8 +171,8 @@ const Media = () => {
               <iframe
                 loading="lazy"
                 title="music2"
-                height="350"
-                width="350"
+                height="330"
+                width="330"
                 className=""
                 allow="autoplay"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/415877685&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
