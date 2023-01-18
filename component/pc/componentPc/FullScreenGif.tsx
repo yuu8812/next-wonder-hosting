@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/react';
 
 const FullScreenGif = () => {
   return (
-    <Box bg={'white'} m={0}>
+    <Box bg={'white'} w={'100vw'} h={'100vh'}>
       <video
         muted={true}
         autoPlay={true}

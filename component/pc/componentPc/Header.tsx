@@ -13,12 +13,12 @@ const Header = () => {
       pos={'relative'}
     >
       <Flex w={'100vw'} pt={8} alignItems={'center'} pl={20}>
-        <Box mt={2} ml={5} width={[null, 200, 200, 300]}>
+        <Box mt={2} ml={5} width={[null, 200, 200, 300]} h={30}>
           <Image
             src={'/svgs/logo2.webp'}
             alt="logo"
             width={300}
-            height={37}
+            height={50}
             priority
           />
         </Box>

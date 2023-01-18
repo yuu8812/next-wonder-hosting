@@ -163,6 +163,7 @@ const Home = () => {
             onClick={() => setOpenMenu(false)}
             as={'a'}
             href={'#introduction'}
+            offset={20}
           >
             コース内容紹介
           </Scroll>
