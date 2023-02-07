@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [width, router.route]);
   useEffect(() => {
-    routeWhich();
+    // routeWhich();
   }, [width]);
 
   return (
