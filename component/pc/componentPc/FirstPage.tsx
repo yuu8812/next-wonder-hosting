@@ -23,12 +23,12 @@ const FirstPage = () => {
           top={-24}
           marginBottom={'-24'}
         >
-          <Box width={[null, 400, 400, 500, 600]}>
+          <Box width={[null, 400, 450, 550, 550]}>
             <Image
               src={'/svgs/logo3.webp'}
               alt="wonder"
-              width={600}
-              height={200}
+              width={550}
+              height={250}
               priority
             />
           </Box>

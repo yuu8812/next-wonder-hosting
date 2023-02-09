@@ -5,12 +5,15 @@ import Link from 'next/link';
 const KitaruImage = () => {
   return (
     <Box mb={20} w={200} h={200}>
-      <Link href="https://www.yumegiwa.co.jp/" target={'_blank'}>
+      <Link
+        href="http://maroonlizard7.sakura.ne.jp/来たるべき風景の予感.html"
+        target={'_blank'}
+      >
         <video
           muted
           autoPlay={true}
           playsInline
-          preload="auto"
+          preload="true"
           loop
           width={172}
           height={116}
@@ -25,6 +28,7 @@ const KitaruImage = () => {
         <Image
           src={'/images/kitarubeki2.webp'}
           alt="icon"
+          priority
           width={500}
           height={200}
           style={{
@@ -40,7 +44,7 @@ const KitaruImage = () => {
           muted
           autoPlay={true}
           playsInline
-          preload="auto"
+          preload="true"
           loop
           width={200}
           height={200}
