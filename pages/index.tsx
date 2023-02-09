@@ -9,6 +9,7 @@ export default function Home() {
         alt="mini-logo"
         width={100}
         height={100}
+        priority
       />
       <Text mt={10} fontSize="2xl" ml={5}>
         Loading...
