@@ -2,7 +2,6 @@ import { Box, Center, Text } from '@chakra-ui/react';
 import { gsap } from 'gsap';
 import { useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Image from 'next/image';
 
 const WaveAndText = () => {
   useEffect(() => {
@@ -71,12 +70,11 @@ const WaveAndText = () => {
         </Center>
         <Box overflow={'hidden'} w={'100vw'} h={'100vw'}>
           <Box w="100vw" h={'max'}>
-            <Image
+            <img
               src={'/svgs/logo4.svg'}
               alt="logo"
               height={1800}
               width={1700}
-              priority
               style={{
                 // transform: 'scale(1.3)',
                 transformOrigin: 'top left',

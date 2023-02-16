@@ -1,5 +1,4 @@
 import { Box } from '@chakra-ui/react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const KitaruImage = () => {
@@ -25,10 +24,10 @@ const KitaruImage = () => {
         >
           <source src={'/gifs/new_program.mp4'} type="video/mp4" />
         </video>
-        <Image
+        <img
           src={'/images/kitarubeki2.webp'}
           alt="icon"
-          priority
+          // priority
           width={500}
           height={200}
           style={{

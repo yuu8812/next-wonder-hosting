@@ -2,7 +2,6 @@ import { Box, Flex } from '@chakra-ui/react';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,7 +41,7 @@ const MovePhotoMovie = () => {
           justifyContent={'center'}
           alignItems={'center'}
         >
-          <Image
+          <img
             src={'/svgs/logo5.svg'}
             alt="logo"
             width={250}
@@ -72,7 +71,7 @@ const MovePhotoMovie = () => {
           justifyContent={'center'}
           alignItems={'center'}
         >
-          <Image
+          <img
             src={'/svgs/logo5.svg'}
             alt="logo"
             width={250}
@@ -102,7 +101,7 @@ const MovePhotoMovie = () => {
           justifyContent={'center'}
           alignItems={'center'}
         >
-          <Image
+          <img
             src={'/svgs/logo5.svg'}
             alt="logo"
             width={250}

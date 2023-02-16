@@ -3,7 +3,6 @@ import { Box, Center, Flex, Spacer, Text } from '@chakra-ui/react';
 import Vimeo from '@u-wave/react-vimeo';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Media = () => {
@@ -33,7 +32,7 @@ const Media = () => {
                 target="blank"
               >
                 <Center flexDir={'column'}>
-                  <Image
+                  <img
                     loading="lazy"
                     src={'/images/3.webp'}
                     alt="image1"
@@ -89,16 +88,15 @@ const Media = () => {
               </Text>
             </Box>
             <Box position="absolute" top={-10} right={'20%'}>
-              <Image
+              <img
                 loading="lazy"
                 alt="human"
-                unoptimized={true}
                 src={'/gifs/human.gif'}
                 width={100}
                 height={100}
                 style={{ position: 'relative', top: 20, left: 10 }}
               />
-              <Image
+              <img
                 loading="lazy"
                 src={'/images/moon.webp'}
                 alt="moon"
@@ -138,14 +136,14 @@ const Media = () => {
                   h={300}
                   mt={10}
                 >
-                  <Image
+                  <img
                     loading="lazy"
                     src={'/images/mark.webp'}
                     alt="image2"
                     width={250}
                     height={150}
                   />
-                  <Image
+                  <img
                     loading="lazy"
                     src={'/images/logo.webp'}
                     alt="logo"

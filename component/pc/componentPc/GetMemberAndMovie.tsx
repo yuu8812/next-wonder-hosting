@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { Box, Center, Flex, Text } from '@chakra-ui/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,10 +74,10 @@ const GetMemberAndMovie = () => {
           position={'relative'}
           maxW={330}
         >
-          <Image
+          <img
             src={'/svgs/logo5.svg'}
             alt="logo"
-            width={400}
+            width={330}
             height={700}
             style={{ zIndex: 10 }}
           />
@@ -89,7 +88,9 @@ const GetMemberAndMovie = () => {
             preload="auto"
             loop
             style={{ position: 'absolute' }}
-            width={'100%'}
+            // width={'100%'}
+            width={330}
+            height={700}
           >
             <source src={'/gifs/finger.mp4'} type="video/mp4" />
           </video>
@@ -101,11 +102,11 @@ const GetMemberAndMovie = () => {
           position={'relative'}
           maxW={330}
         >
-          <Image
+          <img
             // loading="lazy"
             src={'/svgs/logo5.svg'}
             alt="logo"
-            width={400}
+            width={330}
             style={{ zIndex: 1 }}
             height={700}
           />
@@ -116,7 +117,9 @@ const GetMemberAndMovie = () => {
             preload="auto"
             loop
             style={{ position: 'absolute' }}
-            width={'100%'}
+            // width={'100%'}
+            width={330}
+            height={700}
           >
             <source src={'/gifs/gorilla-big.mp4'} type="video/mp4" />
           </video>
@@ -128,13 +131,13 @@ const GetMemberAndMovie = () => {
           position={'relative'}
           maxW={330}
         >
-          <Image
+          <img
             // loading="lazy"
             src={'/svgs/logo5.svg'}
             alt="logo"
-            width={400}
-            style={{ zIndex: 1 }}
+            width={330}
             height={700}
+            style={{ zIndex: 1 }}
           />
           <video
             muted
@@ -143,7 +146,9 @@ const GetMemberAndMovie = () => {
             preload="auto"
             loop
             style={{ position: 'absolute' }}
-            width={'100%'}
+            // width={'100%'}
+            width={330}
+            height={700}
           >
             <source src={'/gifs/guitar.mp4'} type="video/mp4" />
           </video>

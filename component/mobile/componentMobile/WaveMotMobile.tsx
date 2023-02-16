@@ -1,12 +1,11 @@
 import { Box, Center, Text } from '@chakra-ui/react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const WaveMotMobile = () => {
   return (
     <Box paddingTop={40} overflow={'hidden'} minH={'2000px'}>
       <Center>
-        <Image
+        <img
           src={'/svgs/logo6.webp'}
           alt="logo"
           loading="lazy"
@@ -25,7 +24,7 @@ const WaveMotMobile = () => {
         pb={40}
       >
         <Center paddingTop={40} flexDir={'column'}>
-          <Image
+          <img
             src={'/images/mot1.webp'}
             alt="mot"
             loading="lazy"
@@ -36,7 +35,7 @@ const WaveMotMobile = () => {
           <Text>もうちょいマシな物語を作ることに貢献したい</Text>
         </Center>
         <Center paddingTop={8} flexDir={'column'}>
-          <Image
+          <img
             src={'/images/mot2.webp'}
             alt="mot"
             loading="lazy"
@@ -49,7 +48,7 @@ const WaveMotMobile = () => {
           <Text>お気に入りの服を着る、秘密の石をお守りに旅に出る</Text>
         </Center>
         <Center paddingTop={8} flexDir={'column'}>
-          <Image
+          <img
             src={'/images/mot3.webp'}
             alt="mot"
             loading="lazy"
@@ -62,7 +61,7 @@ const WaveMotMobile = () => {
           <Text>「やあ」「やあ」</Text>
         </Center>
         <Center paddingTop={8} flexDir={'column'}>
-          <Image
+          <img
             src={'/images/mot4.webp'}
             alt="mot"
             loading="lazy"

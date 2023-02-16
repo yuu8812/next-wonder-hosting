@@ -1,5 +1,4 @@
 import { Box, Center, Flex, Text } from '@chakra-ui/react';
-import Image from 'next/image';
 import Link from 'next/link';
 import KitaruImage from '../../common/KitaruImage';
 const FirstPage = () => {
@@ -24,12 +23,11 @@ const FirstPage = () => {
           marginBottom={'-24'}
         >
           <Box width={[null, 400, 450, 550, 550]}>
-            <Image
+            <img
               src={'/svgs/logo3.webp'}
               alt="wonder"
               width={550}
               height={250}
-              priority
             />
           </Box>
         </Flex>

@@ -1,5 +1,4 @@
 import { Center } from '@chakra-ui/react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const FooterLogos = () => {
@@ -12,7 +11,7 @@ const FooterLogos = () => {
       pb={16}
     >
       <Link href="/">
-        <Image
+        <img
           loading="lazy"
           className=""
           src={'/svgs/logo3.webp'}
@@ -22,7 +21,7 @@ const FooterLogos = () => {
         />
       </Link>
       <Link href="https://www.yumegiwa.co.jp/" target="blank">
-        <Image
+        <img
           loading="lazy"
           className="pt-20"
           src={'/images/logo.webp'}
@@ -32,7 +31,7 @@ const FooterLogos = () => {
         />
       </Link>
       <Link href="https://www.dracre.co.jp/宇宙子" target={'blank'}>
-        <Image
+        <img
           loading="lazy"
           className="pt-20"
           src={'/images/universe.webp'}
@@ -42,7 +41,7 @@ const FooterLogos = () => {
         />
       </Link>
       <Link href="https://www.dracre.co.jp/" target={'blank'}>
-        <Image
+        <img
           loading="lazy"
           className="pt-20"
           src={'/images/dracle.webp'}
