@@ -1,13 +1,12 @@
 import { Box } from '@chakra-ui/react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const KitaruImage = () => {
+  const router = useRouter();
   return (
     <Box mb={20} w={200} h={200}>
-      <Link
-        href="http://maroonlizard7.sakura.ne.jp/来たるべき風景の予感.html"
-        target={'_blank'}
-      >
+      <Link href="/kitarubeki">
         <video
           muted
           autoPlay={true}

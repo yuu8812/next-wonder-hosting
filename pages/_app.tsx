@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const routeWhich = useCallback(() => {
     if (!width) return;
+    if (router.pathname === '/kitarubeki') return;
     if (width > 700) {
       if (router.route !== '/pc') {
         router.push('/pc');
@@ -20,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
         router.push('/mobile');
       }
     }
-  }, [width, router.route]);
+  }, [width]);
   useEffect(() => {
     routeWhich();
   }, [width]);
@@ -35,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="description"
           content="Googleで検索してもわからない、不思議なモノ・コトに出会いたい。誰のためでもない、あなたがつくる、あなたの物語を発信するインディーズのメディアラボです。"
         />
-        <link rel="shortcut icon" href="/wonderTitle.png" />
+        <link rel="shortcut icon" href="/wonderTitle2.png" />
       </Head>
       <Box
         sx={{

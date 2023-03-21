@@ -184,7 +184,7 @@ const GetMemberAndMovie = () => {
           <Text>モヤモヤしている人</Text>
           <Text>退屈な人</Text>
           <Text>世界をまだ僅かに信じている人</Text>
-          <Text>誰にも認められない異能を持っているような気がする人</Text>
+          <Text>誰にも認められない才能を持っているような気がする人</Text>
           <Text>不思議な夢を見る人</Text>
           <Text>宇宙人</Text>
         </Box>
