@@ -1,31 +1,27 @@
 import type { AppProps } from 'next/app';
 import { Box, ChakraProvider } from '@chakra-ui/react';
-import { GetWindowSize } from '../hooks/GetWindowSize';
-import { useRouter } from 'next/router';
-import { useCallback, useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { GetWindowSize } from '../hooks/GetWindowSize';
 
-export default function App({ Component, pageProps }: AppProps) {
-  const { width } = GetWindowSize();
+type TProps = Pick<AppProps, 'Component' | 'pageProps'> & {
+  deviceType: string;
+};
+const App = ({ Component, pageProps, deviceType }: TProps) => {
   const router = useRouter();
-
-  const routeWhich = useCallback(() => {
-    if (!width) return;
-    if (router.pathname === '/kitarubeki') return;
-    if (width > 700) {
-      if (router.route !== '/pc') {
-        router.push('/pc');
-      }
-    } else {
-      if (router.route !== '/mobile') {
-        router.push('/mobile');
-      }
-    }
-  }, [width]);
+  const { width } = GetWindowSize();
   useEffect(() => {
-    routeWhich();
-  }, [width]);
-
+    if (router.pathname === '/kitarubeki') {
+      return;
+    } else if (deviceType) {
+      router.push('mobile');
+    } else if (!deviceType && width < 800) {
+      router.push('mobile');
+    } else if (!deviceType) {
+      router.push('pc');
+    }
+  }, [deviceType, width]);
   return (
     <ChakraProvider>
       <Head>
@@ -49,4 +45,17 @@ export default function App({ Component, pageProps }: AppProps) {
       </Box>
     </ChakraProvider>
   );
-}
+};
+
+App.getInitialProps = ({ ctx }: any) => {
+  let isMobileView = (
+    ctx.req ? ctx.req.headers['user-agent'] : navigator.userAgent
+  ).match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i);
+
+  //Returning the isMobileView as a prop to the component for further use.
+  return {
+    deviceType: Boolean(isMobileView),
+  };
+};
+
+export default App;
