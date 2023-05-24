@@ -8,6 +8,7 @@ import { useKeenSlider } from 'keen-slider/react';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const SliderAndTeacher = () => {
   const [clicked, setClicked] = useState(false);
@@ -65,7 +66,7 @@ const SliderAndTeacher = () => {
         >
           講師紹介
         </Text>
-        <img
+        <Image
           loading="lazy"
           alt="human"
           // unoptimized={true}
@@ -74,7 +75,7 @@ const SliderAndTeacher = () => {
           height={100}
           style={{ position: 'relative', top: 20, left: 10 }}
         />
-        <img
+        <Image
           loading="lazy"
           src={'/images/moon.webp'}
           alt="moon"
@@ -120,14 +121,14 @@ const SliderAndTeacher = () => {
             >
               <Link href="https://www.yumegiwa.co.jp/" target={'blank'}>
                 <Center flexDir={'column'} h={300} bg={'white'} width={400}>
-                  <img
+                  <Image
                     loading="lazy"
                     src={'/images/mark.webp'}
                     alt="image2"
                     width={250}
                     height={250}
                   />
-                  <img
+                  <Image
                     loading="lazy"
                     src={'/images/logo.webp'}
                     alt="logo"
@@ -154,7 +155,7 @@ const SliderAndTeacher = () => {
                 target="blank"
               >
                 <Center flexDir={'column'}>
-                  <img
+                  <Image
                     loading="lazy"
                     src={'/images/3.webp'}
                     alt="image1"

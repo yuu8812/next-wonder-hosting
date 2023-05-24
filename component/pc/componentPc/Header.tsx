@@ -1,4 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
 const Header = () => {
@@ -13,7 +14,7 @@ const Header = () => {
     >
       <Flex w={'100vw'} pt={8} alignItems={'center'} pl={20}>
         <Box mt={2} ml={5} width={[null, 200, 200, 300]} h={30}>
-          <img src={'/svgs/logo2.webp'} alt="logo" width={300} height={50} />
+          <Image src={'/svgs/logo2.webp'} alt="logo" width={300} height={50} />
         </Box>
         <Flex
           justifyContent={'space-around'}

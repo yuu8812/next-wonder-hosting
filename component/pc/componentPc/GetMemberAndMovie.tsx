@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Box, Center, Flex, Text } from '@chakra-ui/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,7 +75,7 @@ const GetMemberAndMovie = () => {
           position={'relative'}
           maxW={330}
         >
-          <img
+          <Image
             src={'/svgs/logo5.svg'}
             alt="logo"
             width={330}
@@ -102,7 +103,7 @@ const GetMemberAndMovie = () => {
           position={'relative'}
           maxW={330}
         >
-          <img
+          <Image
             // loading="lazy"
             src={'/svgs/logo5.svg'}
             alt="logo"
@@ -131,7 +132,7 @@ const GetMemberAndMovie = () => {
           position={'relative'}
           maxW={330}
         >
-          <img
+          <Image
             // loading="lazy"
             src={'/svgs/logo5.svg'}
             alt="logo"

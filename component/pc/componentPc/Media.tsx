@@ -4,6 +4,7 @@ import Vimeo from '@u-wave/react-vimeo';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Media = () => {
   return (
@@ -32,7 +33,7 @@ const Media = () => {
                 target="blank"
               >
                 <Center flexDir={'column'}>
-                  <img
+                  <Image
                     loading="lazy"
                     src={'/images/3.webp'}
                     alt="image1"
@@ -88,7 +89,7 @@ const Media = () => {
               </Text>
             </Box>
             <Box position="absolute" top={-10} right={'20%'}>
-              <img
+              <Image
                 loading="lazy"
                 alt="human"
                 src={'/gifs/human.gif'}
@@ -96,7 +97,7 @@ const Media = () => {
                 height={100}
                 style={{ position: 'relative', top: 20, left: 10 }}
               />
-              <img
+              <Image
                 loading="lazy"
                 src={'/images/moon.webp'}
                 alt="moon"
@@ -136,14 +137,14 @@ const Media = () => {
                   h={300}
                   mt={10}
                 >
-                  <img
+                  <Image
                     loading="lazy"
                     src={'/images/mark.webp'}
                     alt="image2"
                     width={250}
                     height={150}
                   />
-                  <img
+                  <Image
                     loading="lazy"
                     src={'/images/logo.webp'}
                     alt="logo"

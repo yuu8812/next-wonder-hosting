@@ -1,4 +1,5 @@
 import { Box, Center } from '@chakra-ui/react';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const kitarubeki = () => {
@@ -17,12 +18,13 @@ const kitarubeki = () => {
           }}
         ></Box>
       </Center>
-      <img
+      <Image
         src="/images/Link2.png"
         style={{
           width: '100%',
           overflow: 'hidden',
         }}
+        alt="link"
       />
     </Box>
   );

@@ -17,6 +17,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { Link as Scroll } from 'react-scroll';
 import KitaruImage from '../common/KitaruImage';
 import Link from 'next/link';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -89,7 +90,7 @@ const Home = () => {
             w={'100vw'}
             h={120}
           >
-            <img
+            <Image
               src={'/svgs/logo3.webp'}
               alt="wonder"
               width={320}
@@ -115,7 +116,7 @@ const Home = () => {
           m={0}
           py={2}
         >
-          <img
+          <Image
             src={'/svgs/wonderTitle.svg'}
             alt="wonderTitle"
             width={250}
@@ -146,7 +147,7 @@ const Home = () => {
           fontWeight={'extrabold'}
         >
           <Box height={16} overflow={'hidden'}>
-            <img
+            <Image
               src={'/svgs/logo-mini.svg'}
               alt={'logo-mini'}
               width={80}

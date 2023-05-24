@@ -1,4 +1,5 @@
 import { Box, Center, Flex, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import Link from 'next/link';
 
@@ -50,7 +51,7 @@ const QandA = () => {
       >
         <Box mt={10} borderBottom={'1px'} w={'30vw'} pb={14}>
           <Flex ml={10} alignItems={'flex-start'}>
-            <img
+            <Image
               src={'/images/icon.webp'}
               alt="logo"
               width={32}
@@ -73,7 +74,7 @@ const QandA = () => {
         </Box>
         <Box mt={10} borderBottom={'1px'} w={'30vw'} pb={14}>
           <Flex ml={10} alignItems={'flex-start'}>
-            <img
+            <Image
               src={'/images/icon.webp'}
               alt="logo"
               width={32}
@@ -90,7 +91,7 @@ const QandA = () => {
         </Box>
         <Box mt={10} borderBottom={'1px'} w={'30vw'} pb={14}>
           <Flex ml={10} alignItems={'flex-start'}>
-            <img
+            <Image
               src={'/images/icon.webp'}
               alt="logo"
               width={32}
@@ -107,7 +108,7 @@ const QandA = () => {
         </Box>
         <Box mt={10} borderBottom={'1px'} w={'30vw'} pb={14}>
           <Flex ml={10} alignItems={'flex-start'}>
-            <img
+            <Image
               src={'/images/icon.webp'}
               alt="logo"
               width={32}
@@ -127,7 +128,7 @@ const QandA = () => {
         </Box>
         <Box mt={10} borderBottom={'1px'} w={'30vw'} pb={14}>
           <Flex ml={10} alignItems={'flex-start'}>
-            <img
+            <Image
               src={'/images/icon.webp'}
               alt="logo"
               width={32}
@@ -146,7 +147,7 @@ const QandA = () => {
         </Box>
         <Box mt={10} borderBottom={'1px'} w={'30vw'} pb={14}>
           <Flex ml={10} alignItems={'flex-start'}>
-            <img
+            <Image
               src={'/images/icon.webp'}
               alt="logo"
               width={32}

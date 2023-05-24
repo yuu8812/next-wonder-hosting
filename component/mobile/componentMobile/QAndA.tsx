@@ -1,4 +1,5 @@
 import { Box, Center, Flex, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const QAndA = () => {
@@ -29,7 +30,7 @@ const QAndA = () => {
       </Center>
       <Box mt={10} borderBottom={'1px'} w={'100vw'} pb={14}>
         <Flex ml={10}>
-          <img height={32} src={'/images/icon.webp'} alt="logo" width={32} />
+          <Image height={32} src={'/images/icon.webp'} alt="logo" width={32} />
           <Text position={'relative'} fontSize={'md'} ml={5}>
             何を教えてもらえるの？
           </Text>
@@ -46,7 +47,7 @@ const QAndA = () => {
       </Box>
       <Box mt={10} borderBottom={'1px'} w={'100vw'} pb={14}>
         <Flex ml={10}>
-          <img height={32} src={'/images/icon.webp'} alt="logo" width={32} />
+          <Image height={32} src={'/images/icon.webp'} alt="logo" width={32} />
           <Text position={'relative'} fontSize={'md'} ml={5}>
             小学生だけど大丈夫？
           </Text>
@@ -57,7 +58,7 @@ const QAndA = () => {
       </Box>
       <Box mt={10} borderBottom={'1px'} w={'100vw'} pb={14}>
         <Flex ml={10}>
-          <img height={32} src={'/images/icon.webp'} alt="logo" width={32} />
+          <Image height={32} src={'/images/icon.webp'} alt="logo" width={32} />
           <Text position={'relative'} fontSize={'md'} ml={5}>
             どのような倫理が通用しますか?
           </Text>
@@ -68,7 +69,7 @@ const QAndA = () => {
       </Box>
       <Box mt={10} borderBottom={'1px'} w={'100vw'} pb={14}>
         <Flex ml={10}>
-          <img height={32} src={'/images/icon.webp'} alt="logo" width={32} />
+          <Image height={32} src={'/images/icon.webp'} alt="logo" width={32} />
           <Text position={'relative'} fontSize={'md'} ml={5}>
             授業日以外には何がありますか？
           </Text>
@@ -82,7 +83,7 @@ const QAndA = () => {
       </Box>
       <Box mt={10} borderBottom={'1px'} w={'100vw'} pb={14}>
         <Flex ml={10}>
-          <img height={32} src={'/images/icon.webp'} alt="logo" width={32} />
+          <Image height={32} src={'/images/icon.webp'} alt="logo" width={32} />
           <Text position={'relative'} fontSize={'md'} ml={5}>
             火は使えますか？
           </Text>
@@ -95,7 +96,7 @@ const QAndA = () => {
       </Box>
       <Box mt={10} borderBottom={'1px'} w={'100vw'} pb={14} mb={10}>
         <Flex ml={10}>
-          <img height={32} src={'/images/icon.webp'} alt="logo" width={32} />
+          <Image height={32} src={'/images/icon.webp'} alt="logo" width={32} />
           <Text position={'relative'} fontSize={'md'} ml={5}>
             次回の開講はありますか
           </Text>

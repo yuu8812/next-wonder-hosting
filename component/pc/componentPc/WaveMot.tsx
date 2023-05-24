@@ -1,4 +1,5 @@
 import { Box, Center, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import Link from 'next/link';
 
@@ -18,7 +19,7 @@ const WaveMot = () => {
       mb={-32}
     >
       <Center w={'100vw'}>
-        <img
+        <Image
           src={'/svgs/logo6.webp'}
           alt="logo"
           width={600}
@@ -35,7 +36,7 @@ const WaveMot = () => {
         pb={40}
       >
         <Center paddingTop={40} flexDir={'column'}>
-          <img
+          <Image
             src={'/images/mot1.webp'}
             alt="mot"
             loading="lazy"
@@ -46,7 +47,7 @@ const WaveMot = () => {
           <Text>もうちょいマシな物語を作ることに貢献したい</Text>
         </Center>
         <Center paddingTop={8} flexDir={'column'}>
-          <img
+          <Image
             src={'/images/mot2.webp'}
             alt="mot"
             loading="lazy"
@@ -59,7 +60,7 @@ const WaveMot = () => {
           <Text>お気に入りの服を着る、秘密の石をお守りに旅に出る</Text>
         </Center>
         <Center paddingTop={8} flexDir={'column'}>
-          <img
+          <Image
             src={'/images/mot3.webp'}
             alt="mot"
             loading="lazy"
@@ -72,7 +73,7 @@ const WaveMot = () => {
           <Text>「やあ」「やあ」</Text>
         </Center>
         <Center paddingTop={8} flexDir={'column'}>
-          <img
+          <Image
             src={'/images/mot4.webp'}
             alt="mot"
             loading="lazy"
