@@ -4,24 +4,20 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { GetWindowSize } from '../hooks/GetWindowSize';
+import { NextConfig } from 'next';
 
-type TProps = Pick<AppProps, 'Component' | 'pageProps'> & {
-  deviceType: string;
-};
-const App = ({ Component, pageProps, deviceType }: TProps) => {
+const App = ({ Component, pageProps }: NextConfig) => {
   const router = useRouter();
   const { width } = GetWindowSize();
   useEffect(() => {
-    if (router.pathname === '/kitarubeki') {
-      return;
-    } else if (deviceType) {
-      router.push('mobile');
-    } else if (!deviceType && width < 800) {
-      router.push('mobile');
-    } else if (!deviceType) {
-      router.push('pc');
+    if (!width) return;
+    if (router.route === '/kitarubeki') return;
+    if (width > 1000) {
+      router.push('/pc');
+    } else {
+      router.push('/mobile');
     }
-  }, [deviceType, width]);
+  }, [width]);
   return (
     <ChakraProvider>
       <Head>
@@ -45,17 +41,6 @@ const App = ({ Component, pageProps, deviceType }: TProps) => {
       </Box>
     </ChakraProvider>
   );
-};
-
-App.getInitialProps = ({ ctx }: any) => {
-  let isMobileView = (
-    ctx.req ? ctx.req.headers['user-agent'] : navigator.userAgent
-  ).match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i);
-
-  //Returning the isMobileView as a prop to the component for further use.
-  return {
-    deviceType: Boolean(isMobileView),
-  };
 };
 
 export default App;

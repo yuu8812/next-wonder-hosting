@@ -7,12 +7,18 @@ export default function Home() {
       <Image
         src={'/wonderTitle.png'}
         alt="mini-logo"
-        width={70}
-        height={70}
+        width={100}
+        height={100}
         priority
       />
-      <Text mt={10} fontSize="md" ml={5}>
-        loading...
+      <Text
+        mt={10}
+        fontSize="2xl"
+        ml={10}
+        fontWeight={'bold'}
+        letterSpacing={'3px'}
+      >
+        Loading...
       </Text>
     </Center>
   );

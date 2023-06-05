@@ -14,16 +14,17 @@ const kitarubeki = () => {
           cursor={'pointer'}
           opacity={0}
           onClick={() => {
-            router.push('https://www.google.com');
+            router.push('/');
           }}
         ></Box>
       </Center>
       <Image
         src="/images/Link2.png"
         style={{
-          width: '100%',
           overflow: 'hidden',
         }}
+        width={2000}
+        height={1000}
         alt="link"
       />
     </Box>
