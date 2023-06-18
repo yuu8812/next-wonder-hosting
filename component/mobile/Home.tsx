@@ -312,17 +312,22 @@ const Home = () => {
         </Text>
       </Flex>
       <GetMember />
-      <Box id={'introduction'}>
+      <Box id={'introduction'} maxW={'100vw'} overflow={'hidden'}>
         <Introduction />
       </Box>
-      <SliderAndTeacher />
-      <Box id={'map'}>
+      <Box maxW={'100vw'} overflow={'hidden'}>
+        <SliderAndTeacher />
+      </Box>
+
+      <Box id={'map'} maxW={'100vw'} overflow={'hidden'}>
         <PlaceAndMap />
       </Box>
       <Box id={'contact'}>
         <QAndA />
       </Box>
-      <FooterLogos />
+      <Box minH={'100vh'} bg="white">
+        <FooterLogos />
+      </Box>
     </Box>
   );
 };

@@ -10,7 +10,7 @@ const FooterLogos = () => {
       justifyContent={'space-around'}
       bg={'white'}
       pb={16}
-      minH={'100vh'}
+      minH={'110vh'}
     >
       <Link href="/">
         <Image

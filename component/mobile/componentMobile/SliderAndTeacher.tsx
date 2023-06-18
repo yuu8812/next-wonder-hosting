@@ -56,7 +56,7 @@ const SliderAndTeacher = () => {
   );
 
   return (
-    <Box mt={-10}>
+    <Box mt={-10} maxW={'100vw'} overflow={'hidden'}>
       <Center flexDir={'column'}>
         <Text
           mt={5}

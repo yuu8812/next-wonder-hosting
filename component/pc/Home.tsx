@@ -27,7 +27,7 @@ const Home = () => {
       <Box position={'sticky'} top={60} pb={80} zIndex={0}>
         <FirstPage />
       </Box>
-      <Box pos={'relative'}>
+      <Box pos={'relative'} zIndex={100}>
         <WaveAndText />
       </Box>
       <Box position={'sticky'} top={0} zIndex={10} overflow="hidden">
@@ -36,13 +36,25 @@ const Home = () => {
       <Box position={'relative'} zIndex={9000} top={200} pb={80} bg={'white'}>
         <Introduction />
       </Box>
-      <Box position={'relative'} zIndex={9000} bg={'white'}>
+      <Box
+        position={'relative'}
+        zIndex={9000}
+        bg={'white'}
+        maxW={'100vw'}
+        overflow={'hidden'}
+      >
         <Media />
       </Box>
       <Box position={'relative'} top={0} zIndex={9000}>
         <WaveMot />
       </Box>
-      <Box position={'relative'} zIndex={9000} bg={'white'}>
+      <Box
+        position={'relative'}
+        zIndex={9000}
+        bg={'white'}
+        maxW={'100vw'}
+        overflow={'hidden'}
+      >
         <FullScreenGif />
       </Box>
       <Box position={'relative'} zIndex={9000} bg={'white'}>
