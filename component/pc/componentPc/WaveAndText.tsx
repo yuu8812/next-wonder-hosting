@@ -70,12 +70,13 @@ const WaveAndText = () => {
           </Box>
         </Center>
         <Box overflow={'hidden'} w={'100vw'} h={'100vw'}>
-          <Box w="100vw" h={'max'}>
+          <Box w="100vw" h={'max'} zIndex={1000}>
             <Image
               src={'/svgs/logo4.svg'}
               alt="logo"
-              height={1800}
-              width={1700}
+              height={300}
+              width={400}
+              priority
               style={{
                 // transform: 'scale(1.3)',
                 transformOrigin: 'top left',
